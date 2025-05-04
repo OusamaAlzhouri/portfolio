@@ -33,3 +33,77 @@ body, h1, h2, p, ul, li, a {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
   }
+
+  .hero {
+    height: 100vh;
+    background-color: #333;
+    background-image: url('../media/hero-banner2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); 
+    text-align: center;
+    color: #fff;
+  }
+  
+  .greeting {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  
+  .tagline {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  @keyframes bounce {
+    0%, 40%, 80%, 100% { transform: translateY(0); }
+    20% { transform: translateY(12px); }
+    60% { transform: translateY(12px); }
+  }
