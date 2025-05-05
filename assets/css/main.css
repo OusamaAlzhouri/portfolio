@@ -221,3 +221,44 @@ body, h1, h2, p, ul, li, a {
     border-radius: 10px;
     width: inherit;
   }
+
+  .contact-section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .contact-intro {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 40px;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eee;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .contact-link span {
+    font-size: 16px;
+  }
