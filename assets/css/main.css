@@ -34,6 +34,8 @@ body, h1, h2, p, ul, li, a {
     margin-inline: auto;
   }
 
+  /* Hero */
+
   .hero {
     height: 100vh;
     background-color: #333;
@@ -157,4 +159,65 @@ body, h1, h2, p, ul, li, a {
     background-size: cover;
     background-position: center;
     margin: 0 auto;
+  }
+
+  /* Skills Section */
+
+  .skills-section {
+    padding: 80px 0;
+    background-color: #222;
+  }
+  
+  .skills-list {
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  .skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  .skill-item:last-child {
+    border-bottom: none;
+  }
+  
+  .skill-name {
+    font-size: 20px;
+    color: #eee;
+  }
+  
+  .skill-level {
+    background-color: #444;
+    height: 20px;
+    border-radius: 10px;
+    width: 0%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skill-item:nth-child(1) .skill-level {
+    width: 80%;
+  }
+  
+  .skill-item:nth-child(2) .skill-level {
+    width: 75%;
+  }
+  
+  .skill-item:nth-child(3) .skill-level {
+    width: 60%;
+  }
+  
+  .skill-level::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 10px;
+    width: inherit;
   }
